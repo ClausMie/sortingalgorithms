@@ -11,6 +11,6 @@ public class BubbleSortTest {
         int[] valuesToSort = {10,5,100,99,97,130};
         int[] sortedValues = {5,10,97,99,100,130};
 
-        assertArrayEquals(sortedValues,sorter.bubbleSort(valuesToSort));
+        assertArrayEquals(sortedValues,sorter.sort(valuesToSort));
     }
 }

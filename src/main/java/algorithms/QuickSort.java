@@ -2,7 +2,10 @@ package algorithms;
 
 import java.util.Arrays;
 
-public class QuickSort {
+public class QuickSort implements SortingAlgorithm{
+    public String getName(){
+        return "QuickSort";
+    }
 
     public int[] sort(int[] arr){
         int[] arrWithLastFakeInt = this.addLastFakeInt(arr);

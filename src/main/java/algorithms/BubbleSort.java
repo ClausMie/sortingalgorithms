@@ -3,8 +3,12 @@ package algorithms;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
-public class BubbleSort {
-    public int[] bubbleSort(int[] numbers){
+public class BubbleSort implements SortingAlgorithm{
+    public String getName(){
+        return "BubbleSort";
+    }
+
+    public int[] sort(int[] numbers){
         boolean changedSomething = false;
         for (int i = 0; i < numbers.length; i++){
             for (int j = i; j < numbers.length-i-1; j++) {
